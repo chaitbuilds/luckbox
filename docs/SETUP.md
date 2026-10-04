@@ -60,6 +60,10 @@ Useful radar fields: `weight` (orders radars), `min_score`, `max_per_day`, `max_
 sentences on what a great move is). Context refs: `profile:<path>`, `local:<path>` (inside `~/.luckbox`),
 `people:core`.
 
+Any feed works as an `rss` source: blogs, Substack, subreddits, YouTube channels, Google News searches,
+GitHub releases, job boards. Luma takes a city slug for `place` (e.g. `"denver"`, `"london"`) and calendar
+slugs for `calendars`.
+
 Built-in radar ideas: **telling** (`{"type": "telling", "repos": ["~/code/project"]}`), a weekly
 **wildcard** from local events, and **people** (`{"type": "people_scout"}` plus `{"type": "followups"}`).
 

@@ -1,0 +1,46 @@
+{
+  "name": "jobs",
+  "title": "Job search",
+  "weight": 1.2,
+  "min_score": 0.6,
+  "max_per_day": 4,
+  "context": [
+    "profile:me.md",
+    "profile:now.md",
+    "profile:interests/job-search.md",
+    "people:core"
+  ],
+  "guidance": "Openings, hiring signals and people at the companies on your list. The best move is a warm one: someone you know there, a hiring manager who just posted, a team that just raised. A cold application is a weak move; say who to write to instead when you can.",
+  "sources": [
+    {
+      "type": "rss",
+      "label": "We Work Remotely: design",
+      "url": "https://weworkremotely.com/categories/remote-design-jobs.rss",
+      "days": 7
+    },
+    {
+      "type": "rss",
+      "label": "News: target companies",
+      "url": "https://news.google.com/rss/search?q=%22Acme%22+OR+%22Globex%22+hiring+OR+raises&hl=en-US&gl=US&ceid=US:en",
+      "days": 14
+    },
+    {
+      "type": "hn",
+      "queries": [
+        "who is hiring",
+        "design systems"
+      ],
+      "days": 7,
+      "min_points": 30
+    },
+    {
+      "type": "people_scout",
+      "label": "People",
+      "every_days": 7,
+      "days": 30,
+      "skip_labels": [
+        "family"
+      ]
+    }
+  ]
+}

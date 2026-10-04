@@ -1,0 +1,39 @@
+{
+  "name": "climbing",
+  "title": "Climbing",
+  "weight": 0.9,
+  "min_score": 0.5,
+  "max_per_day": 3,
+  "context": [
+    "profile:me.md",
+    "profile:interests/climbing.md"
+  ],
+  "guidance": "Recurring meetups, clinics, route-setting nights and trips near you where you'd climb with the same people again. A move names the group, when it meets, and the first step. Gear deals, pro news and one-off parties fail.",
+  "sources": [
+    {
+      "type": "luma",
+      "label": "Luma",
+      "place": "denver",
+      "days_ahead": 21
+    },
+    {
+      "type": "rss",
+      "label": "r/bouldering",
+      "url": "https://www.reddit.com/r/bouldering/top/.rss?t=week",
+      "days": 10
+    },
+    {
+      "type": "rss",
+      "label": "Local news",
+      "url": "https://news.google.com/rss/search?q=climbing+gym+Denver&hl=en-US&gl=US&ceid=US:en",
+      "days": 30
+    },
+    {
+      "type": "scout",
+      "label": "Climbing scout",
+      "every_days": 7,
+      "places": "Denver and Boulder: climbing gyms, clubs, outdoor groups",
+      "brief": "Recurring meetups, beginner-friendly clinics, women's and queer climbing nights, trips with open spots."
+    }
+  ]
+}

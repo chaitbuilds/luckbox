@@ -74,7 +74,9 @@ Done. Next:
 SOURCES_DOC = """Source types you can use (JSON objects in "sources"):
 - {"type": "arxiv", "query": "(cat:cs.HC) AND (abs:\\"phrase\\" OR abs:\\"phrase\\")", "days": 7, "max": 60}
 - {"type": "hn", "queries": ["phrase", "phrase"], "days": 3, "min_points": 20}
-- {"type": "rss", "label": "Writer name", "url": "https://.../feed"}
+- {"type": "rss", "label": "Name", "url": "..."}   any feed: a blog or Substack (/feed), a subreddit (https://www.reddit.com/r/NAME/top/.rss?t=week),
+  a YouTube channel (https://www.youtube.com/feeds/videos.xml?channel_id=ID), a Google News search
+  (https://news.google.com/rss/search?q=QUERY), GitHub releases (https://github.com/OWNER/REPO/releases.atom), a job board feed
 - {"type": "openalex", "days": 45, "authors": [{"name": "Full Name", "hint": "Institution"}]}
 - {"type": "seminars", "topics": ["cond-mat_stat-mech", "physics_bio-ph"], "days_ahead": 45}   (researchseminars.org topic codes)
 - {"type": "luma", "categories": ["ai"], "calendars": ["calendar-slug"], "place": "city-slug", "days_ahead": 30}
@@ -86,9 +88,11 @@ for moves worth this person's time: people to contact, events to attend, program
 
 {doc}
 
-Use web search to find real, current sources: blogs and newsletters with working RSS feeds, the right arXiv categories
-and phrases, active researchers (with institution), Luma community calendars (their public slug from the luma.com URL)
-and readable events pages, near {city} where location matters. Prefer few, high-signal sources over many.
+Pick the source types that fit this interest; most interests aren't research, so use arXiv, OpenAlex and seminars only
+when it is. Use web search to find real, current sources: feeds (blogs, newsletters, subreddits, YouTube, Google News
+searches, job boards), Luma community calendars or the city page (public slug from the luma.com URL), readable events
+pages, and, for research, the right arXiv categories and active researchers, near {city} where location matters.
+Prefer a few high-signal sources over many.
 Never put anything from a section headed "Private" into a query, label or URL.
 
 Return ONLY a JSON object, no prose:

@@ -22,39 +22,53 @@ area it has to land on.
 Every morning it gives you a short list of moves:
 
 ```
-PHYSICS
-  Ask Ada Lovelace about her new engine paper            ● Lovelace   paper
-  Join the soft-matter seminar (Oct 19, online)
+STARTUPS
+  Ask Ada Lovelace how she priced her API launch          ● Lovelace   post
+  Go to the founders' breakfast (Thu Oct 8, nearby)
 PEOPLE
-  Follow up with Grace Hopper about compilers                         follow-up
+  Follow up with Grace Hopper about the intro                          follow-up
 TELLING
-  Post the before/after of your parser rewrite                        idea
-CLUBS
-  Join the Thursday chess night (Oct 8, nearby)
+  Post the before/after of your onboarding redesign                    idea
+LOCAL
+  Try the Tuesday bouldering meetup (Oct 6, 10 min away)
 ```
 
 Click a line to see why it fits you and the link. `●` means someone you know is involved.
 
 It covers both sides of the rectangle:
 
-- **Doing:** papers, talks, events and programs in your areas, judged against what you're working on.
+- **Doing:** events, posts, programs and people in your areas, judged against what you're working on.
 - **Telling:** post ideas drawn from your recent work and what people are discussing this week.
 - **People:** news about people you know, follow-ups on messages you sent, and who could introduce you.
 
 It never sends anything. You act; you mark what was useful; it learns from the marks.
 
+## You choose what it watches
+
+Each interest is a **radar**. Write a paragraph about the interest (what you're after, who's worth
+meeting, what to skip) and `luckbox radar draft` finds sources for it and writes the radar. Edit it
+like any JSON file.
+
+| For | Sources |
+|---|---|
+| Events near you | Luma (any city), Partiful, any events page, a weekly web search |
+| Anything with a feed | RSS: blogs, Substack, subreddits, YouTube channels, Google News searches, GitHub releases, job boards |
+| Tech | Hacker News |
+| Research | arXiv, OpenAlex (new work by authors you follow), researchseminars.org talks |
+| People you know | weekly news about them, follow-ups on messages you sent |
+| Your own work | post ideas from your recent commits |
+
+Starting points in [examples/radars](examples/radars): a local hobby scene, a job search, AI products,
+people, telling, and a weekly wildcard.
+
 ## How it works
 
-1. **Sources** pull new items: arXiv, OpenAlex, Hacker News, RSS, Luma, Partiful, researchseminars.org,
-   events pages, and a weekly web search for things those miss.
+1. **Sources** pull new items from whatever your radars watch (table above).
 2. **Claude** reads each item against your private notes (who you are, what you want, who you know)
    and decides whether there's a move for you, and why. Most items fail.
 3. **Your list** is a local page. Keys: `j`/`k` move, `space` details, `o` open, `g` keep, `d` done,
    `r` replied, `x` dismiss.
 4. **Your marks** go back to Claude as examples. Marking *done* adds that person to your network.
-
-Each interest is a **radar**: a small JSON file naming your notes, the sources to watch, and what a good
-move looks like.
 
 ## Setup
 
