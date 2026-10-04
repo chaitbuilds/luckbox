@@ -1,0 +1,25 @@
+{
+  "name": "telling",
+  "title": "Telling",
+  "weight": 1.0,
+  "min_score": 0.55,
+  "max_per_day": 2,
+  "fresh_days": 7,
+  "context": [
+    "profile:me.md",
+    "profile:now.md"
+  ],
+  "guidance": "Post ideas drafted from your recent work and today's conversations. Pass only ideas that show something you made or learned, have a specific angle, and ride something people are discussing now. Move: 'Post <the hook>', naming what to attach.",
+  "sources": [
+    {
+      "type": "telling",
+      "label": "Telling",
+      "every_days": 2,
+      "days": 14,
+      "ideas": 3,
+      "repos": [
+        "~/code/your-project"
+      ]
+    }
+  ]
+}

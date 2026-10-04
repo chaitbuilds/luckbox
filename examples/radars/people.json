@@ -1,0 +1,31 @@
+{
+  "name": "people",
+  "title": "People",
+  "weight": 1.25,
+  "min_score": 0.5,
+  "max_per_day": 4,
+  "fresh_days": 45,
+  "context": [
+    "profile:me.md",
+    "profile:now.md",
+    "people:core",
+    "local:people/routers.md"
+  ],
+  "guidance": "Public updates about people you know, and follow-ups on moves you made. A good move is specific to what changed and to your history with them. Favor people who helped you and people you haven't spoken with in months, when there's a real reason. Never a generic check-in.",
+  "sources": [
+    {
+      "type": "people_scout",
+      "label": "People",
+      "every_days": 7,
+      "days": 30,
+      "skip_labels": [
+        "family"
+      ]
+    },
+    {
+      "type": "followups",
+      "label": "Follow-up",
+      "after_days": 10
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "wildcard",
+  "title": "Wildcard",
+  "weight": 0.8,
+  "min_score": 0.5,
+  "max_per_day": 1,
+  "every_days": 7,
+  "context": [
+    "profile:me.md"
+  ],
+  "guidance": "Once a week, one thing outside your usual priorities that would put you in an unfamiliar room with interesting people. In your city, cheap to try, plausibly fun or eye-opening. Parties and nightlife fail.",
+  "sources": [
+    {
+      "type": "luma",
+      "label": "Luma",
+      "days_ahead": 14,
+      "place": "nyc"
+    }
+  ]
+}

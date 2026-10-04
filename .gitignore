@@ -1,0 +1,22 @@
+# Personal data never lives in this repo
+*.db
+*.db-*
+*.mbox
+*.zip
+*.vcf
+*.csv
+exclude.txt
+config.json
+.env
+out/
+data/
+profile/
+archives/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Fictional examples are safe to commit
+!examples/config.json
+!examples/profile/
+!examples/radars/

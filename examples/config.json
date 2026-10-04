@@ -1,0 +1,9 @@
+{
+  "profile": "~/my-luckbox-profile",
+  "me": ["you@example.com"],
+  "sources": [
+    {"name": "school", "type": "mbox", "path": "archives/school/takeout.zip"},
+    {"name": "work", "type": "contacts_csv", "path": "staging/work_contacts.csv"},
+    {"name": "linkedin", "type": "linkedin", "path": "archives/linkedin/export.zip"}
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "ai-products",
+  "context": [
+    "profile:me.md",
+    "profile:now.md",
+    "profile:interests/ai-products.md",
+    "people:core"
+  ],
+  "min_score": 0.6,
+  "max_per_day": 3,
+  "max_per_source": 2,
+  "sources": [
+    {
+      "type": "hn",
+      "days": 3,
+      "min_points": 20,
+      "queries": [
+        "proactive agent",
+        "personal agent",
+        "AI assistant",
+        "agent memory",
+        "agent context",
+        "AI product design",
+        "ambient AI",
+        "AI email",
+        "AI inbox"
+      ]
+    },
+    {
+      "type": "arxiv",
+      "days": 7,
+      "max": 60,
+      "query": "(abs:proactive OR abs:\"mixed-initiative\" OR abs:\"personal assistant\" OR abs:\"agent memory\") AND (cat:cs.HC OR cat:cs.AI OR cat:cs.CL)"
+    },
+    {
+      "type": "rss",
+      "label": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "max": 15
+    },
+    {
+      "type": "rss",
+      "label": "Latent Space",
+      "url": "https://www.latent.space/feed"
+    },
+    {
+      "type": "rss",
+      "label": "Matt Webb",
+      "url": "https://interconnected.org/home/feed"
+    },
+    {
+      "type": "rss",
+      "label": "Geoffrey Litt",
+      "url": "https://www.geoffreylitt.com/feed.xml"
+    },
+    {
+      "type": "rss",
+      "label": "Maggie Appleton",
+      "url": "https://maggieappleton.com/rss.xml"
+    },
+    {
+      "type": "rss",
+      "label": "Linus Lee",
+      "url": "https://thesephist.com/index.xml"
+    },
+    {
+      "type": "rss",
+      "label": "Ethan Mollick",
+      "url": "https://www.oneusefulthing.org/feed"
+    },
+    {
+      "type": "rss",
+      "label": "Hamel Husain",
+      "url": "https://hamel.dev/index.xml"
+    },
+    {
+      "type": "rss",
+      "label": "Eugene Yan",
+      "url": "https://eugeneyan.com/rss/"
+    }
+  ]
+}
